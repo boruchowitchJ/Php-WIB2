@@ -19,7 +19,7 @@
 </div>
 <div><a class=" lien picto_bourse"  data-place="bourse"><img src="./assets/images/illu/basilique-01.png"  alt="Picto"></a> 
 </div>
-<div><a class=" lien picto_grandPlace"  data-place="grandPlace"><img src="./assets/images/illu/basilique-01.png" alt="Picto"></a> 
+<div><a class=" lien picto_grandPlace" href="?page=carte&poi" data-place="grandPlace"><img src="./assets/images/illu/basilique-01.png" alt="grandPlace"></a> 
 </div>
 <div><a class=" lien picto_mannequepis"  data-place="mannequepis"><img src="./assets/images/illu/basilique-01.png"  alt="Picto"></a> 
 </div>
