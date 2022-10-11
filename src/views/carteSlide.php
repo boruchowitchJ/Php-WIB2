@@ -30,22 +30,24 @@
         <!-- The place around -->
                 <h2 class="AdvPOI"> The Place Around</h2>
                 </div>
-          <div class="carousel-container">      
+          <div class="carousel-container"> 
+          <div class="carouselNavigation">
+            <div id="prevButton"></div>
+        <div id="nextButton"></div>
+            </div>
         <section class="carousel-slide">
+            
         <img id="lastClone" src="./assets/images/bar/hard Rock Cafe.jpeg">
         <img src="./assets/images/restaurant/the sister.jpg"> 
        <img src="./assets/images/bar/Le Cercueil.png">
        <img src="./assets/images/bar/hard Rock Cafe.jpeg">
-       <img id="firstClone" src="./assets/images/restaurant/the sister.jpg"> 
-       
+       <img id="firstClone" src="./assets/images/restaurant/the sister.jpg">  
     </section>
+     
 </div>
-        <button id="prevButton">prev</button>
-        <button id="nextButton">next</button>
         
-        <div class="ImgAdvBox">
-             
-        </div>
+        
+        
         
 </div>
 </section>
