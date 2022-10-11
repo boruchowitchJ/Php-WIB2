@@ -1,21 +1,24 @@
 @font-face {
-    font-family: "Montserrat-Regular";
-    src: url(../fonts/Montserrat/static/Montserrat-Regular.ttf)
+    font-family: "Roboto-Bold";
+    src: url(../fonts/Roboto/Roboto-Bold.ttf)
   }
-
-
+  @font-face {
+    font-family: "Roboto-Regular";
+    src: url(../fonts/Roboto/Roboto-Regular.ttf)
+  }
+ 
 .boxSlider{
     position: absolute;
     right: 0;
     top: 0;
     width: 470px;
-    height: 100%;
+    min-height: 100vh;
     background: #31525B;
     display: flex;
-    -ms-flex-direction: column;
+   
     flex-direction: column;
-    z-index: 3;
-    /* transition: transform .8s cubic-bezier(.25,.74,.22,.99);  */
+    z-index:3;
+   
 }
 
 .HeaderBoxSlider{
@@ -28,16 +31,24 @@
     justify-content: space-between;
     padding-right: 28px;
     padding-left: 28px;
+
 }
+
+
 .CloseBox{
     margin-top: 8px;
     width: 30px;
     height: 55%;
+    z-index: 3;
 }
 .CloseBox:hover{
     transform: scale(1.2);
     cursor: pointer;
 }
+
+ 
+
+
 
 .SearchSlider{
     width: 216px;
@@ -45,7 +56,7 @@
     flex-direction: column;
     height: 40px;
     margin-left: 66px;
-    justify-content: space-between;
+    
 
 }
 
@@ -61,6 +72,7 @@
     border: var(--text2) 2px solid;
 
 }
+
 .BoxImagePOI{
     height: 250px;
     margin-top: 11px;
@@ -69,6 +81,7 @@
 .imagePOI{
     min-width: 100%;
     height: 100%;
+   
 }
 
 .container-aside{
@@ -86,14 +99,17 @@
     width: 201px;
     height: 32px;
     color: white;
-    font-family: "Montserrat-Regular";
+    font-family: "Roboto-Bold";
     font-size: 2rem;
 
 }
 .DescPOI{
+
     width: 90%;
-    height: 48%;
+    height: 36%;
     color: white;
+    font-family: "Roboto-Regular";
+    font-size: 1rem;
 }
 .UrlPOI{
     width: 148px;
@@ -112,7 +128,33 @@ height: 27px;
 }
 .UrlPOI>h3{
     color:var(--text2);
-    font-family: "Montserrat-Regular";
+    font-family: "Roboto-Bold";
     font-size: 1.25rem;
     text-decoration: underline;
+}
+.container-aside .AdvPOI{
+    width:257px;
+    height: 32px;
+    color: white;
+    font-family: "Roboto-Bold";
+    font-size: 2rem;
+    margin-top:10px;
+}
+.carousel-container{
+    height: 266px;
+    min-width: 100%;
+    margin-top: 11px; 
+    overflow:hidden;  
+}
+.carousel-slide{
+    
+    height: 100%;
+    min-width: 100%;
+    margin-top: 11px;
+    display: flex;
+}
+.carousel-slide>img{
+    min-width: 100%;
+    height: 100%;
+   
 }
