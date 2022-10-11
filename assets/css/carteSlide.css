@@ -144,7 +144,43 @@ height: 27px;
     height: 266px;
     min-width: 100%;
     margin-top: 11px; 
-    overflow:hidden;  
+    overflow:hidden; 
+    position:relative; 
+}
+.carouselNavigation{
+    margin-top: 42%;
+    height: 27%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    background-color: #141313a1;
+    z-index: 5;
+    justify-content: space-between;
+    align-items: center;
+}
+#prevButton{
+    height: 40px;
+    width:71px;
+    border: none;
+    padding: 10px 20px;
+     display: inline-block;
+     cursor: pointer;
+     background-image: url(../images/illu/arrow1.png);
+     background-position: 17px 5px;
+     background-repeat: no-repeat;
+     background-size: 39px;  
+}
+#nextButton{
+    height: 40px;
+    width:71px;
+    border: none;
+    padding: 10px 20px;
+     display: inline-block;
+     cursor: pointer;
+     background-image: url(../images/illu/arrow.png);
+     background-position: 17px 5px;
+     background-repeat: no-repeat;
+     background-size: 39px; 
 }
 .carousel-slide{
     
