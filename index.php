@@ -31,7 +31,7 @@ include './src/db/db.php';
     <?php include './src/router/route.php'; ?>
 
     <script src="./assets/scripts/create.js"></script>
-
+ <script src="./assets/scripts/carteSlide.js"></script>
 </body>
 
 </html>
