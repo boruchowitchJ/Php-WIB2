@@ -48,7 +48,7 @@ $isFound = false; //connu
             ///include "./src/controller/carte.php";
             //echo "Bienvenue  ! $connectedUser ($email)";
             //redirection
-            header('location:http://localhost/WIB_CODAGE?page=carte');
+            header('location:http://localhost/WIB2?page=carte');
         }
 
     include "./src/views/login.php";

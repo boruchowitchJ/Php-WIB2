@@ -19,7 +19,7 @@ if(isset($_POST['envoyer']))
 $stmt = $mysqlClient-> prepare($sql);
 $stmt->execute();
 
-header('location:http://localhost/WIB_CODAGE?page=login');
+header('location:http://localhost/WIB2?page=login');
 
 }
 

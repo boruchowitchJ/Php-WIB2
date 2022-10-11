@@ -23,7 +23,7 @@ if(isset($_SESSION['message'])) {
  ?page=quelquechose */
 
  if(!isset($_SESSION['name']) && $_GET["page"] != "login" && $_GET["page"] != "createAccount") {
-    header('location:http://localhost/WIB_CODAGE?page=login');
+    header('location:http://localhost/WIB2?page=login');
  }
 
 
