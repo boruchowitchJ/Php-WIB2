@@ -30,21 +30,39 @@
         <!-- The place around -->
                 <h2 class="AdvPOI"> The Place Around</h2>
                 </div>
-          <div class="carousel-container"> 
+    <div class="carousel-container"> 
           <div class="carouselNavigation">
-            <div id="prevButton"></div>
-        <div id="nextButton"></div>
+                <div id="prevButton"></div>
+                <div id="nextButton"></div>
             </div>
         <section class="carousel-slide">
+            <div class="carteImg">
+
+                <div class="titreImg">Hard Rock Cafe</div>
+                <img id="lastClone" src="./assets/images/bar/hard Rock Cafe.jpeg">
             
-        <img id="lastClone" src="./assets/images/bar/hard Rock Cafe.jpeg">
-        <img src="./assets/images/restaurant/the sister.jpg"> 
-       <img src="./assets/images/bar/Le Cercueil.png">
-       <img src="./assets/images/bar/hard Rock Cafe.jpeg">
-       <img id="firstClone" src="./assets/images/restaurant/the sister.jpg">  
-    </section>
+             </div>
+             <div class="carteImg">
+                <div class="titreImg">The Sister Restaurant</div>
+                <img src="./assets/images/restaurant/the sister.jpg">
+                        
+            </div> 
+            <div class="carteImg">
+                <div class="titreImg">Le Cercueil Bar</div>  
+                <img src="./assets/images/bar/Le Cercueil.png">
+            </div>
+            <div class="carteImg">
+                <div class="titreImg">Hard Rock Cafe</div>
+                <img src="./assets/images/bar/hard Rock Cafe.jpeg"> 
+            </div>
+            <div class="carteImg">
+                <div class="titreImg">The Sister Restaurant</div>  
+                <img id="firstClone" src="./assets/images/restaurant/the sister.jpg"> 
+         
+            </div> 
+        </section>
      
-</div>
+    </div>
         
         
         
