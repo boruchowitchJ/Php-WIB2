@@ -23,10 +23,10 @@
                 <h2 class="titlePOI">Grand Place</h2>
                     
                 <p class="DescPOI">La Grand-Place (Grote Markt en flamand) est non seulement le centre géographique, historique et commercial de Bruxelles, mais aussi l’une des places les plus importantes en Europe. Cette place pavée animée fait partie du plus bel ensemble architectural du XVIIe siècle de Belgique.</p>
-                <div class="UrlPOI">
+                <a href="https://goo.gl/maps/tQUjZMoiKTAdqzqT7" target="_blank"><div class="UrlPOI">
                     <img class="imgURL" src="./assets/images/illu/location.png">
-                    <h3>ITINERAIRE</h3>
-                </div>
+                     <h3>ITINERAIRE</h3>
+                </div></a>
         <!-- The place around -->
                 <h2 class="AdvPOI"> The Place Around</h2>
                 </div>
@@ -38,25 +38,25 @@
         <section class="carousel-slide">
             <div class="carteImg">
 
-                <div class="titreImg">Hard Rock Cafe</div>
-                <img id="lastClone" src="./assets/images/bar/hard Rock Cafe.jpeg">
+            <a href=" https://www.hardrockcafe.com/location/brussels/" target="_blank">  <div class="titreImg">Hard Rock Cafe</div></a>
+                 <img id="lastClone" src="./assets/images/bar/hard Rock Cafe.jpeg">
             
              </div>
              <div class="carteImg">
-                <div class="titreImg">The Sister Restaurant</div>
-                <img src="./assets/images/restaurant/the sister.jpg">
+             <a href="https://www.thesistercafe-brussels.com/" target="_blank"><div class="titreImg">The Sister Restaurant</div></a>
+                  <img src="./assets/images/restaurant/the sister.jpg">
                         
             </div> 
             <div class="carteImg">
-                <div class="titreImg">Le Cercueil Bar</div>  
-                <img src="./assets/images/bar/Le Cercueil.png">
+            <a href="https://fr-fr.facebook.com/barlecercueil/" target="_blank"><div class="titreImg">Le Cercueil Bar</div> </a> 
+               <img src="./assets/images/bar/Le Cercueil.png">
             </div>
             <div class="carteImg">
-                <div class="titreImg">Hard Rock Cafe</div>
-                <img src="./assets/images/bar/hard Rock Cafe.jpeg"> 
+            <a href=" https://www.hardrockcafe.com/location/brussels/" target="_blank"><div class="titreImg">Hard Rock Cafe</div></a>
+                 <img src="./assets/images/bar/hard Rock Cafe.jpeg"> 
             </div>
             <div class="carteImg">
-                <div class="titreImg">The Sister Restaurant</div>  
+            <a href="https://www.thesistercafe-brussels.com/" target="_blank"><div class="titreImg">The Sister Restaurant</div> </a> 
                 <img id="firstClone" src="./assets/images/restaurant/the sister.jpg"> 
          
             </div> 
@@ -64,9 +64,25 @@
      
     </div>
         
+        <!-- Reviews -->
+    <section class="containerReviews">
+        <div class="ReviewsPOI">
+        <h2 > Reviews</h2>
+        </div> 
+<div class="ReviewsUserName">
+<h3>UserName</h3>
+
+        </div>
+    
+<input type="text" class="ReviewsText">
+
+</input>
+<div class="ReviewsComment">
+<input class="btn_comment" id="btn_comment" type="submit" name="comment" value="Comment">
+</div>
+    </section>  
         
-        
-        
+
 </div>
 </section>
 
