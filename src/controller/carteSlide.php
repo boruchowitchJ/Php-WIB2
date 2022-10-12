@@ -1,5 +1,28 @@
 <?php
 
+
+// connexion db
+include "./src/db/db.php";
+
+$isFound = false;
+
+
+
+$query= "
+SELECT  * FROM poi;
+";
+$lecturePoi= $mysqlClient->prepare($query);
+
+$lecturePoi->execute();
+
+$listePoi = $lecturePoi->fetchAll();
+
+foreach ($listePoi as $Poi) {
+echo  $Poi['id']. $Poi['title'].$Poi['description'].$Poi['URL_maps'].$Poi['Images_URL'];
+
+
+}
+
 if($get["poi"] == "atomium"){
     //je prépare ma requete sql pour aller chercher les ifnso de ce poi
 }
