@@ -76,7 +76,7 @@
 .BoxContainer{
     width: 100%;
     height: 100vh;
-    overflow: scroll;   
+    overflow-y: scroll;   
 }
 .BoxImagePOI{
     height: 250px;
