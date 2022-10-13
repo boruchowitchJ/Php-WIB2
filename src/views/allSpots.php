@@ -43,13 +43,77 @@
     <h1 class="text-spots">All spots</h1>
     <div class="divider"></div>
 </div>
-<div class="grid-box">
-    <div class="Button-navigation">
-        <div class="button-next"></div>
+<div class="Button-navigation">
         <div class="button-prev"></div>
+        <div class="button-next"></div>
     </div>
+<div class="grid-box">
+    
     <!-- Zone galerie -->
-    <div clss="grid-slider">
+    <div class="grid-slider">
+    <div class="grid-container" id="lastClone">
+            <div class="grid-items">
+                <div class="card">
+                    <div class="image-content">
+                        <div class="card-image">
+                            <a href="?page=carte&poi==atomium"><img src="./assets/images/place/atomium.jpg" alt="atomium" class="card-img" /></a>
+                            <h3 class="place">Atomium</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-items">
+                <div class="card">
+                    <div class="image-content">
+                        <div class="card-image">
+                            <img src="./assets/images/place/basilique.jpg" alt="basilique" class="card-img" />
+                            <h3 class="place">Atomium</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-items">
+                <div class="card">
+                    <div class="image-content">
+                        <div class="card-image">
+                            <img src="./assets/images/place/ChâteauRoyalLaeken.jpg" alt="château" class="card-img" />
+                            <h3 class="place">Atomium</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-items">
+                <div class="card">
+                    <div class="image-content">
+                        <div class="card-image">
+                            <img src="./assets/images/place/grandPlace.jpg" alt="grandPlace" class="card-img" />
+                            <h3 class="place">Atomium</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-items">
+                <div class="card">
+                    <div class="image-content">
+                        <div class="card-image">
+                            <img src="./assets/images/place/mannekenPis.jpg" alt="mannekenPis" class="card-img" />
+                            <h3 class="place">Atomium</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-items">
+                <div class="card">
+                    <div class="image-content">
+                        <div class="card-image">
+                            <img src="./assets/images/place/montDesArts.jpg" alt="montDesArts" class="card-img" />
+                            <h3 class="place">Atomium</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    <!--  -->
         <div class="grid-container">
             <div class="grid-items">
                 <div class="card">
@@ -113,6 +177,69 @@
             </div>
         </div>
         <div class="grid-container">
+            <div class="grid-items">
+                <div class="card">
+                    <div class="image-content">
+                        <div class="card-image">
+                            <a href="?page=carte&poi==atomium"><img src="./assets/images/place/atomium.jpg" alt="atomium" class="card-img" /></a>
+                            <h3 class="place">Atomium</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-items">
+                <div class="card">
+                    <div class="image-content">
+                        <div class="card-image">
+                            <img src="./assets/images/place/basilique.jpg" alt="basilique" class="card-img" />
+                            <h3 class="place">Atomium</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-items">
+                <div class="card">
+                    <div class="image-content">
+                        <div class="card-image">
+                            <img src="./assets/images/place/ChâteauRoyalLaeken.jpg" alt="château" class="card-img" />
+                            <h3 class="place">Atomium</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-items">
+                <div class="card">
+                    <div class="image-content">
+                        <div class="card-image">
+                            <img src="./assets/images/place/grandPlace.jpg" alt="grandPlace" class="card-img" />
+                            <h3 class="place">Atomium</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-items">
+                <div class="card">
+                    <div class="image-content">
+                        <div class="card-image">
+                            <img src="./assets/images/place/mannekenPis.jpg" alt="mannekenPis" class="card-img" />
+                            <h3 class="place">Atomium</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-items">
+                <div class="card">
+                    <div class="image-content">
+                        <div class="card-image">
+                            <img src="./assets/images/place/montDesArts.jpg" alt="montDesArts" class="card-img" />
+                            <h3 class="place">Atomium</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  -->
+        <div class="grid-container" id="firstClone">
             <div class="grid-items">
                 <div class="card">
                     <div class="image-content">
