@@ -137,6 +137,38 @@
     align-items: center;
 }
 
+.grid-slider{
+    min-height: 77vh;
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.grid-box{
+    display: flex;
+    flex-direction: row;
+    min-height: 79vh;
+    max-width: 53vw;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.grid-container {
+    width: 100%;
+    height:  94%;;
+    margin: 30px auto; /* Permet d'avoir ma grid bien centré*/
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    row-gap: 2rem;
+    justify-content: center;
+    column-gap: 4rem;
+    justify-items: center;
+    align-items: center;
+    background-color: red;
+
+}
+
 .grid-items{
     display: flex;
     justify-content: center;
@@ -174,4 +206,40 @@
     font-size: 1rem;
     color:var(--titre);
     padding: 10px;
+}
+
+.button-navigation {
+    margin-top: 14%;
+    height: 27%;
+    width: 95%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-next {
+    height: 75px;
+    width: 71px;
+    border: none;
+    padding: 10px 20px;
+    display: inline-block;
+    cursor: pointer;
+    background-image: url(../images/illu/flecheGauche.png);
+    background-position: 17px 5px;
+    background-repeat: no-repeat;
+    background-size: 39px;
+}
+
+.button-prev {
+    height: 75px;
+    width: 71px;
+    border: none;
+    padding: 10px 20px;
+    display: inline-block;
+    cursor: pointer;
+    background-image: url(../images/illu/flecheDroite.png);
+    background-position: 17px 5px;
+    background-repeat: no-repeat;
+    background-size: 39px;
 }
