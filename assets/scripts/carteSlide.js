@@ -1,4 +1,5 @@
 
+
 const carouselSlide = document.querySelector('.carousel-slide');
 const carouselImage = document.querySelectorAll('.carousel-slide img');
 
@@ -8,7 +9,7 @@ const nextBtn = document.querySelector('#nextButton');
 
 //Counter
 
-let count = 1;
+let count = 1;// commencer par l'image n°1
 let size1 = carouselImage[0].clientWidth;
 carouselSlide.style.transform ='translateX(' + (-size1 * count) + 'px)';
 
