@@ -241,6 +241,7 @@
 .button-prev:hover{
     transform: scale(1.2);
     cursor: pointer;
+    background-image: url(../images/illu/flecheGauche2.png);
 }
 .button-next{
     height: 75px;
@@ -256,4 +257,5 @@
 .button-next:hover{
     transform: scale(1.2);
     cursor: pointer;
+    background-image: url(../images/illu/flecheDroite2.png);
 }
