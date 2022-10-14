@@ -51,7 +51,7 @@
     
     <!-- Zone galerie -->
     <div class="grid-slider">
-    <div class="grid-container" id="lastClone">
+    <div class="grid-container" id="LastClone">
             <div class="grid-items">
                 <div class="card">
                     <div class="image-content">
@@ -239,7 +239,7 @@
             </div>
         </div>
         <!--  -->
-        <div class="grid-container" id="firstClone">
+        <div class="grid-container" id="FirstClone">
             <div class="grid-items">
                 <div class="card">
                     <div class="image-content">

@@ -33,13 +33,13 @@ nextBttn.addEventListener('click',()=>{
 
   gridSlider.addEventListener('transitionend',()=>{
 
-    if(carouselBox[counter].id === 'lastClone'){
+    if(carouselBox[counter].id === 'LastClone'){
         gridSlider.style.transition = "none";
         counter = carouselBox.length -2;  
         gridSlider.style.transform ='translateX(' + (-size * counter) + 'px)';
    
     }
-    if(carouselBox[counter].id === 'firstClone'){
+    if(carouselBox[counter].id === 'FirstClone'){
         gridSlider.style.transition = "none";
       counter = carouselBox.length - counter;  
       gridSlider.style.transform ='translateX(' + (-size * counter) + 'px)';
