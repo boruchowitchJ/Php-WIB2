@@ -61,8 +61,8 @@ if (isset($_GET["page"]))
 
     else if($get["page"] == "contact")
     {
-        include "./src/controller/nav.php";
         include "./src/controller/header.php";
+        include "./src/controller/nav.php";       
         include "./src/controller/contact.php";
     }
 

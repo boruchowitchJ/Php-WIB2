@@ -19,6 +19,7 @@ include './src/db/db.php';
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/about_us.css">
+    <link rel="stylesheet" href="./assets/css/contact.css">
     <link rel="stylesheet" href="./assets/css/allSpots.css">
     <link rel="stylesheet" href="./assets/css/nav.css">
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
