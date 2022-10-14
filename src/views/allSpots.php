@@ -17,6 +17,8 @@
                         <li> EN |</li>
                     </ul>
                 </nav>
+</div>
+                <div class="logout">LOGOUT</div>
                 <div class="menu-wrap-nav">
                     <input type="checkbox" class="toggler">
                     <div class="hamburger">
