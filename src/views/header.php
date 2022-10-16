@@ -24,7 +24,7 @@
                 </nav>
             
     </div>
-    <div class="logout">LOGOUT</div>
+     <a href="?page=logout"> <div class="logout">LOGOUT</div></a>
     </div>
 
 </header>
