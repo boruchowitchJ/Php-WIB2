@@ -18,7 +18,7 @@
                     </ul>
                 </nav>
 </div>
-                <div class="logout">LOGOUT</div>
+                <a href="?page=logout"> <div class="logout">LOGOUT</div></a>
                 <div class="menu-wrap-nav">
                     <input type="checkbox" class="toggler">
                     <div class="hamburger">
