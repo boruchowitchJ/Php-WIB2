@@ -58,6 +58,10 @@ if (isset($_GET["page"]))
     {
         include "./src/controller/LogIn.php";
     }
+    else if($get["page"] == "logout")
+    {
+        include "./src/controller/LogOut.php";
+    }
 
     else if($get["page"] == "contact")
     {
