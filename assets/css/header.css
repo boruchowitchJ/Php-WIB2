@@ -99,6 +99,9 @@
     font-family: "RobotoBold";
     color: var(--titre);
 }
+a{
+    text-decoration:none;
+}
 .logout:hover{
     transform: scale(1.05);
     cursor: pointer;
