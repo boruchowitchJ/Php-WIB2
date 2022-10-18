@@ -14,7 +14,7 @@ $isFound = false; //connu
 
             $email = $_POST['email'];
             $pass_word = $_POST['pswd'];
-            $name = $_POST['name'];
+            //$name = $_POST['name'];
 
             $sqlQuery = "
                 SELECT *
