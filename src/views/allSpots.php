@@ -18,7 +18,7 @@
                     </ul>
                 </nav>
 </div>
-             
+
                 <div class="menu-wrap-nav">
                     <input type="checkbox" class="toggler">
                     <div class="hamburger">
@@ -51,7 +51,7 @@
         <div class="button-next"></div>
     </div>
 <div class="grid-box">
-    
+
     <!-- Zone galerie -->
     <div class="grid-slider">
     <div class="grid-container" id="LastClone">
@@ -70,7 +70,7 @@
                     <div class="image-content">
                         <div class="card-image">
                             <img src="./assets/images/place/basilique.jpg" alt="basilique" class="card-img" />
-                            <h3 class="place">Atomium</h3>
+                            <h3 class="place">basilique de koekelberg</h3>
                         </div>
                     </div>
                 </div>
@@ -80,7 +80,7 @@
                     <div class="image-content">
                         <div class="card-image">
                             <img src="./assets/images/place/ChâteauRoyalLaeken.jpg" alt="château" class="card-img" />
-                            <h3 class="place">Atomium</h3>
+                            <h3 class="place">Château Royal Laeken</h3>
                         </div>
                     </div>
                 </div>
@@ -90,7 +90,7 @@
                     <div class="image-content">
                         <div class="card-image">
                             <img src="./assets/images/place/grandPlace.jpg" alt="grandPlace" class="card-img" />
-                            <h3 class="place">Atomium</h3>
+                            <h3 class="place">grand Place</h3>
                         </div>
                     </div>
                 </div>
@@ -100,7 +100,7 @@
                     <div class="image-content">
                         <div class="card-image">
                             <img src="./assets/images/place/mannekenPis.jpg" alt="mannekenPis" class="card-img" />
-                            <h3 class="place">Atomium</h3>
+                            <h3 class="place">manneken Pis</h3>
                         </div>
                     </div>
                 </div>
@@ -110,13 +110,13 @@
                     <div class="image-content">
                         <div class="card-image">
                             <img src="./assets/images/place/montDesArts.jpg" alt="montDesArts" class="card-img" />
-                            <h3 class="place">Atomium</h3>
+                            <h3 class="place">Mont Des Arts</h3>
                         </div>
                     </div>
                 </div>
             </div>
-        </div> 
-    <!--  -->
+        </div>
+    <!-- Deuxième page du slider -->
         <div class="grid-container">
             <div class="grid-items">
                 <div class="card">
