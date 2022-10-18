@@ -1,36 +1,35 @@
 <?php 
-$errors = '';
-$myemail = 'j.behzad@interface3.be';//<-----Put Your email address here.
-if(empty($_POST['name'])  || 
-   empty($_POST['email']) || 
-   empty($_POST['message']))
-{
-    $errors .= "\n Error: tous les champs doivent etre completé";
-}
+///<-----Put Your email address here.
+// if(empty($_POST['name'])  || 
+//    empty($_POST['email']) || 
+//    empty($_POST['message']))
+// {
+//     $errors .= "\n Error: tous les champs doivent etre completé";
+// }
 
-$name = $_POST['name']; 
-$email_address = $_POST['email']; 
-$message = $_POST['message']; 
+// $name = $_POST['name']; 
+// $email_address = $_POST['email']; 
+// $message = $_POST['message']; 
 
-if (!preg_match("/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i", $email_address))
-{
-    $errors .= "\n Error: adresse email non-valide";
-}
+// if (!preg_match("/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i", $email_address))
+// {
+//     $errors .= "\n Error: adresse email non-valide";
+// }
 
-if( empty($errors))
-{
-	$to = $myemail; 
-	$email_subject = "Contact form submission: $name";
-	$email_body = "You have received a new message. ".
-	" Here are the details:\n Name: $name \n Email: $email_address \n Message \n $message"; 
+// if( empty($errors))
+// {
+// 	$to = $myemail; 
+// 	$email_subject = "Contact form submission: $name";
+// 	$email_body = "You have received a new message. ".
+// 	" Here are the details:\n Name: $name \n Email: $email_address \n Message \n $message"; 
 	
-	$headers = "From: $myemail\n"; 
-	$headers .= "Reply-To: $email_address";
+// 	$headers = "From: $myemail\n"; 
+// 	$headers .= "Reply-To: $email_address";
 	
-	mail($to,$email_subject,$email_body,$headers);
+// 	mail($to,$email_subject,$email_body,$headers);
 	//redirect to the 'thank you' page
-	header('Location: ?page=carte');
-}
+// 	header('Location: ?page=carte');
+// }
 include "./src/views/contact.php";
 
 
