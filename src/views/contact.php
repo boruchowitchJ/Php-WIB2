@@ -1,5 +1,5 @@
-<section class="about ">
-    <div class="boxAboutUs ">
+<section class="contact ">
+    <div class="boxContact ">
 
 
         <div class="aboutText">
@@ -13,7 +13,7 @@
     </div>
     <div class="fond_contact">
         <aside class="illustration_contact">
-            <img src="./assets\images\illu\contact.png" alt="">
+            
         </aside>
     </div>
 

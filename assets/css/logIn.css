@@ -127,6 +127,10 @@ form{
     height: 232px;
     margin-top: 27px;
 }
+.inputData input:focus {
+    border: 3px solid var(--titre);
+
+  }
 .inputGroup{
     display: flex;
     justify-content: center;
@@ -210,8 +214,8 @@ h2{
 
 .btn_log:hover{
     background-color: var(--orange);
+    transform: scale(1.05);
 }
-
 .createAccount{
     width: 261px;
     height: 25px;
@@ -222,7 +226,18 @@ h2{
     font-family: "RobotoThin";
     color: var(--grey);
 }
+.createAccount a{
 
+    font-family: "RobotoRegular";
+    font-size: 1.3rem;
+      color: var(--text2);
+    
+    }
+    .createAccount a:hover{
+      transform: scale(1.25);
+      cursor: pointer;
+      
+    }
 span{
     font-family: "RobotoMedium";
     text-decoration: underline;

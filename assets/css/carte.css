@@ -7,6 +7,7 @@
     --text2:#FFA101;
     --formulaire: #D1D1D1;
     --bouton:#2F4F58;
+    --border:#a4dce1;
    
     
 }
@@ -33,10 +34,7 @@ body{
     left: 0;
 }
 
-.container_picto img {
-    width: 35px;
-    height:35px;
-}
+
 .carte{  
     width: 100%; 
     height: 100%;
@@ -46,130 +44,267 @@ body{
 
 
 .picto_atomium{
+    width: 35px;
+    height:35px;
     position: absolute;
     left: 400px;
     top: 100px;
+    background-image: url('../images/illu/basilique-01.png');
+    background-size: contain;
+    background-repeat: no-repeat;
     transition: transform .2s;
+    
 
    
 }
 .picto_atomium:hover{
-    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    width: 50px;
+    height:50px;
+    border: var(--border) 1px solid;
+    border-radius: 50px;
+    background-image: url(../images/place/atomium.jpg);
+    background-size: cover;
+    background-position: center center;
+    transform: scale(3);
 }
 
 .picto_basilique{ 
+    width: 35px;
+    height:35px;
     position: absolute;
     left: 256px;
     top: 250px;
+    background-image: url('../images/illu/basilique-01.png');
+    background-size: contain;
+    background-repeat: no-repeat;
     transition: transform .2s;
     
 } 
 
 .picto_basilique:hover{
-    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    width: 50px;
+    height:50px;
+    border: var(--border) 1px solid;
+    border-radius: 50px;
+    background-image: url(../images/place/basilique.jpg);
+    background-size: cover;
+    background-position: center center;
+    transform: scale(3); 
 }
 
 .picto_palaisRoyal{
+    width: 35px;
+    height:35px;
     position: absolute;
     left: 446px;
     top: 133px;
+    background-image: url('../images/illu/basilique-01.png');
+    background-size: contain;
+    background-repeat: no-repeat;
     transition: transform .2s;
 }
 
 .picto_palaisRoyal:hover{
-    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
+    width: 50px;
+    height:50px;
+    border: var(--border) 1px solid;
+    border-radius: 50px;
+    background-image: url(../images/place/ChâteauRoyalLaeken.jpg);
+    background-size: cover;
+    background-position: center center;
+    transform: scale(3);}
 
 .picto_parcRoyal{
+    width: 35px;
+    height:35px;
     position: absolute;
     left: 431px;
      top: 389px;
+     background-image: url('../images/illu/basilique-01.png');
+    background-size: contain;
+    background-repeat: no-repeat;
      transition: transform .2s;
 }
 
 .picto_parcRoyal:hover{
-    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
+    width: 50px;
+    height:50px;
+    border:var(--border) 1px solid;
+    border-radius: 50px;
+    background-image: url(../images/place/palaisRoyal.jpg);
+    background-size: cover;
+    background-position: center center;
+    transform: scale(3);}
 
 .picto_palaisJustice{
+    width: 35px;
+    height:35px;
     position: absolute;
     left: 387px;
     top: 433px;
+    background-image: url('../images/illu/basilique-01.png');
+    background-size: contain;
+    background-repeat: no-repeat;
     transition: transform .2s;
 }
 .picto_palaisJustice:hover{
-    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
+    width: 50px;
+    height:50px;
+    border:var(--border) 1px solid;
+    border-radius:50px;
+    background-image: url(../images/place/palaisDeJustice.jpg);
+    background-size: cover;
+    background-position: center center;
+    transform: scale(3);}
 
 .picto_bourse{ 
+    width: 35px;
+    height:35px;
     position: absolute;
     left: 382px;
-top: 374px;
-transition: transform .2s;
+    top: 374px;
+    background-image: url('../images/illu/basilique-01.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: transform .2s;
 } 
 .picto_bourse:hover{
-    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
+    width: 50px;
+    height:50px;
+    border:var(--border) 1px solid;
+    border-radius: 50px;
+    background-image: url(../images/place/bourse.jpg);
+    background-size: cover;
+    background-position: center center;
+    transform: scale(3);}
 
-.picto_grandPlace{ 
+.picto_grandPlace{
+    width: 35px;
+    height:35px; 
     position: absolute;
     left: 394px;
     top: 360px;
+    background-image: url('../images/illu/basilique-01.png');
+    background-size: contain;
+    background-repeat: no-repeat;
     transition: transform .2s;
     
 } 
 .picto_grandPlace:hover{
-    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
+    width: 50px;
+    height:50px;
+    border: var(--border) 1px solid;
+    border-radius: 50px;
+    background-image: url(../images/place/GrandPlace.jpg);
+    background-size: cover;
+    background-position: center center;
+    transform: scale(3);}
 
-.picto_mannequepis{ 
+.picto_mannequepis{
+    width: 35px;
+    height:35px; 
     position: absolute;
     left: 403px;
     top: 365px;
+    background-image: url('../images/illu/basilique-01.png');
+    background-size: contain;
+    background-repeat: no-repeat;
     transition: transform .2s;
 } 
 .picto_mannequepis:hover{
-    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
+    width: 50px;
+    height:50px;
+    border: var(--border) 1px solid;
+    border-radius: 50px;
+    background-image: url(../images/place/MannekenPis.jpg);
+    background-size: cover;
+    background-position: center center;
+    transform: scale(3);}
+
 .picto_cinquentenaire{ 
+    width: 35px;
+    height:35px;
     position: absolute;
     left: 200px; 
     top:200px ;
+    background-image: url('../images/illu/basilique-01.png');
+    background-size: contain;
+    background-repeat: no-repeat;
     transition: transform .2s;
     
 }
 .picto_cinquentenaire:hover{
-    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
+    width: 50px;
+    height:50px;
+    border:var(--border)1px solid;
+    border-radius:50px;
+    background-image: url(../images/place/parcCinquentenaire.jpg);
+    background-size: cover;
+    background-position: center center;
+    transform: scale(3);}
 
 .picto_tourJaponaise{ 
+    width: 35px;
+    height:35px;
     position: absolute;
     left: 441px;
      top: 124px;
+     background-image: url('../images/illu/basilique-01.png');
+    background-size: contain;
+    background-repeat: no-repeat;
      transition: transform .2s;
 } 
 .picto_tourJaponaise:hover{
-    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
+    width: 50px;
+    height:50px;
+    border: var(--border) 1px solid;
+    border-radius: 50px;    
+    background-image: url(../images/place/tourjaponaise.jpg);
+    background-size: cover;
+    background-position: center center;
+    transform: scale(3);}
 .picto_afrique{ 
+    width: 35px;
+    height:35px;
     position: absolute;
     left: 200px; 
     top:200px;
+    background-image: url('../images/illu/basilique-01.png');
+    background-size: contain;
+    background-repeat: no-repeat;
     transition: transform .2s;
     
 } 
 .picto_afrique:hover{
-    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
+    
+    width: 50px;
+    height:50px;
+    border:var(--border) 1px solid;
+    border-radius: 50px;
+    background-image: url(../images/place/muséedAfrique.jpg);
+    background-size: cover;
+    background-position: center center;
+    transform: scale(3);}
 
 
 .picto_montDesArts{ 
+    width: 35px;
+    height:35px;
     position: absolute;
     left: 431px;
      top: 389px;
+     background-image: url('../images/illu/basilique-01.png');
+    background-size: contain;
+    background-repeat: no-repeat;
      transition: transform .2s;
     
 } 
 .picto_montDesArts:hover{
-    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
+    width: 50px;
+    height:50px;
+    border: var(--border) 1px solid;
+    border-radius: 50px;
+    background-image: url(../images/place/montDesArts.jpg);
+    background-size: cover;
+    background-position: center center;
+    transform: scale(3);}

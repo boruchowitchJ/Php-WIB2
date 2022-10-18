@@ -19,6 +19,7 @@ $listePoi = $lecturePoi->fetchAll();
 
 foreach ($listePoi as $Poi) {
 // echo  $Poi['id']. $Poi['title'].$Poi['description'].$Poi['URL_maps'].$Poi['Images_URL'];
+// $Poi['id']. $Poi['title'].$Poi['description'].$Poi['URL_maps'].$Poi['Images_URL'];
 
 
 }

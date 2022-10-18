@@ -45,7 +45,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    width: 487px;
+    width: 627px;
 
 }
 
@@ -115,26 +115,67 @@
     font-size: 1.5rem;
 }
 
-.divider{
-    width: 50vw;
+.divider {
+    width: 55vw;
     height: 2px;
+    margin-right: 12px;
     margin-top: 15px;
     background-color: var(--divider);
 }
 /* Fin de la zone header*/
 /* Début de la zone galerie*/
-.grid-container{
+/*.grid-container{
     max-width: 1200px;
     width: 80%;
     max-height: 100vh;
     margin: 30px auto; /* Permet d'avoir ma grid bien centré*/
-    display: grid;
+   /* display: grid;
     grid-template-columns: repeat(3, 300px);
     row-gap: 2rem;
     justify-content: center;
     column-gap: 4rem;
     justify-items: center;
     align-items: center;
+}*/
+
+
+.Button-navigation{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 15%;
+    position: absolute
+}
+.grid-box{
+    
+    height: 79vh;
+    width: 54%;
+    margin: auto;
+    overflow:hidden; 
+    position:relative; 
+  
+}
+.grid-slider{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}  
+
+.grid-container {
+    width: 100%;
+    height: 94%;
+    margin: 5px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    row-gap: 1rem;
+    justify-content: center;
+    column-gap: 4rem;
+    justify-items: center;
+    align-items: center;
+   
+
 }
 
 .grid-items{
@@ -174,4 +215,47 @@
     font-size: 1rem;
     color:var(--titre);
     padding: 10px;
+}
+
+.button-navigation {
+    margin-top: 14%;
+    height: 27%;
+    width: 95%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-prev{
+    height: 75px;
+    width: 71px;
+    border: none;
+    padding: 10px 20px;
+    display: inline-block;
+    background-image: url(../images/illu/flecheGauche.png);
+    background-position: 17px 5px;
+    background-repeat: no-repeat;
+    background-size: 39px;
+}
+.button-prev:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    background-image: url(../images/illu/flecheGauche2.png);
+}
+.button-next{
+    height: 75px;
+    width: 71px;
+    border: none;
+    padding: 10px 20px;
+    display: inline-block;
+    background-image: url(../images/illu/flecheDroite.png);
+    background-position: 17px 5px;
+    background-repeat: no-repeat;
+    background-size: 39px;
+}
+.button-next:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    background-image: url(../images/illu/flecheDroite2.png);
 }
