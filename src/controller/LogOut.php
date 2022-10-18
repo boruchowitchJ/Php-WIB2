@@ -1,6 +1,6 @@
 <?php
 
-session_start();
+// session_start();
 if ($_GET["page"] = "login") {
     unset($_SESSION);
     session_destroy();
