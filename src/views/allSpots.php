@@ -123,7 +123,7 @@
                     <div class="image-content">
                         <div class="card-image">
                             <a href="?page=carte&poi==atomium"><img src="./assets/images/place/muséedAfrique.jpg" alt="museeAfrique" class="card-img" /></a>
-                            <h3 class="place"> Musée royal de l'Afrique centrale</h3>
+                            <h3 class="place"> Musée de l'Afrique centrale</h3>
                         </div>
                     </div>
                 </div>
@@ -248,7 +248,7 @@
                     <div class="image-content">
                         <div class="card-image">
                             <a href="?page=carte&poi==atomium"><img src="./assets/images/place/muséedAfrique.jpg" alt="museeAfrique" class="card-img" /></a>
-                            <h3 class="place"> Musée royal de l'Afrique centrale</h3>
+                            <h3 class="place"> Musée de l'Afrique centrale</h3>
                         </div>
                     </div>
                 </div>
