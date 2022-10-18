@@ -70,7 +70,7 @@
                     <div class="image-content">
                         <div class="card-image">
                             <img src="./assets/images/place/basilique.jpg" alt="basilique" class="card-img" />
-                            <h3 class="place">basilique de koekelberg</h3>
+                            <h3 class="place">basilique de koekeljhberg</h3>
                         </div>
                     </div>
                 </div>
