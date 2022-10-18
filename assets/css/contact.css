@@ -56,23 +56,22 @@
     width: 328px;
     height: 173px;  
     box-sizing: border-box;
-    border: 3px solid #D1D1D1;
-    
+    border: 3px solid #D1D1D1; 
+    border-radius: 10px;   
     outline: none;
 }
 .btn_contact{
     background-color:var(--greenblue);
     border-radius: 30px;
     height: 40px;
-    width: 70px;
+    width: 90px;
     border: none;
-    padding: 20px 20px;
+    
     display: inline-block;
     cursor: pointer;
-    background-image: url(../images/illu/arrow.png);
-    background-position: 15px 5px;
-    background-repeat: no-repeat;
-    background-size: 40px;
+    font-family: "RobotoRegular";
+    font-size: 1rem;
+    color: white;
 }
 
 .btn_contact:hover{
@@ -80,13 +79,13 @@
     transform: scale(1.05);
 }
 .cont_act{
-    align-self: flex-end;
+    align-self:center;
     display: flex;
     flex-direction:row;
     justify-content: space-evenly;
-    width: 190px;
-    margin-top: -76px;
-    margin-right: 48px;
+    width: 190px;  
+    margin-top: -150px;
+        
 }
 
 .cont_act h2{
@@ -100,7 +99,7 @@
     height: 50px;
     box-sizing: border-box;
     border: 3px solid #D1D1D1;
-    
+    border-radius: 10px;
     outline: none;
     
 }
@@ -110,6 +109,7 @@
     background-color: var(--lightgrey);
     border-radius: 30px;
     box-shadow:  5px 5px 7px #7B79797A;
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -163,6 +163,6 @@ p{
     
 }
 .reseau img{
-    width: 10%;
+    width: 5%;
     object-fit: contain;
 }

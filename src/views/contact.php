@@ -28,8 +28,7 @@
                        </div>
                         <!------- Bouton-------->
                         <div class="cont_act">
-                            <h2>Send</h2>
-                            <input class="btn_contact" type="submit" name="connexion" value="">
+                            <input class="btn_contact" type="submit" name="connexion" value="Envoyer">
                         </div>                        
                     </form>
                     <div class="reseau">
