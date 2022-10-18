@@ -9,9 +9,24 @@ if(isset($_POST['envoyer']))
     $pwd =$_POST['password'];
     $confpwd =$_POST['confirmPwd'];
 
-    //Requete d'insersion dans la DB//
+    //Requete control de duplication dans la DB//
 
-    // $sql = ("INSERT INTO `user`( `name`, `mail`, `password`, `confirmPassword`) VALUES (:nom, :mail, :pwd, :confpwd)");
+    
+
+    $deplicate= "SELECT *  FROM `user` WHERE email ='$mail'";
+    $resultat = $mysqlClient->prepare($deplicate);
+    $resultat->execute();
+    $result1 =  $resultat->fetchAll();
+
+    $nb = count($result1);
+
+    
+if($nb !=0){
+ 
+  echo "<script>alert ('Email Has Already Taken !');</script>";
+   
+}
+else{
 
     $sql = "INSERT INTO `user` ( `name`, `email`, `password`, `confirmPassword`)
     VALUES( '$nom','$mail','$pwd','$confpwd')";
@@ -20,6 +35,8 @@ $stmt = $mysqlClient-> prepare($sql);
 $stmt->execute();
 
 header('location:http://localhost/WIB2?page=login');
+}
+
 
 }
 
