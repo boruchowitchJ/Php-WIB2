@@ -162,7 +162,27 @@ p{
     justify-content: space-evenly;
     
 }
-.reseau img{
+.reseau button{
     width: 5%;
+    height:15%;
+    border-radius:70px;
+    border: none;
+    cursor: pointer;
+    margin-top: 100px;
+
+
+   
+}
+.reseau img{
+    width: 100%;
     object-fit: contain;
+    position: center, center;
+}
+#inputEmail{
+    background-image: url(../images/illu/mail.png);
+    background-position: 15px 10px;
+    background-repeat: no-repeat;
+    background-size: 22px;
+    padding-left: 51px;
+
 }

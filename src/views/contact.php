@@ -15,10 +15,10 @@
                        <div class="inputData_contact">
 
                        <div class="inputGroup">
-                            <input class="inputboxContact" type="text" name="email" id="email" placeholder="Name">
+                            <input class="inputboxContact" id="inputName" type="text" name="name" placeholder="Username">
                         </div>
-
-
+                        <div class="inputGroup"><input class="inputboxContact" id="inputEmail" type="text" name="email" placeholder="Email">
+                    </div>
                         <div class="inputMessage">
                         <label for="message"></label>
                        <textarea class="inputContact" id="message" name="message" rows="3" cols="30" placeholder="Your message..."></textarea> 
@@ -32,9 +32,9 @@
                         </div>                        
                     </form>
                     <div class="reseau">
-            <img src="assets\images\illu\facebook.png" alt="">
-            <img src="assets\images\illu\twitter.png" alt="">
-            <img src="assets\images\illu\instagram.png" alt="">
+           <button><img src="assets\images\illu\facebook.png" alt=""></button> 
+            <button><img src="assets\images\illu\twitter.png" alt=""></button>
+            <button><img src="assets\images\illu\instagram.png" alt=""></button>
            </div>
             
 

@@ -35,6 +35,7 @@
                         <li><a href="?page=about_us">ABOUT US</a></li>
                         <li><a href="?page=allSpots">ALL SPOTS</a></li>
                         <li><a href="?page=contact">CONTACT</a></li>
+                        <li><a href="?page=logout">LOGOUT</a></li>
                     </ul>
                 </div>
             </div>
