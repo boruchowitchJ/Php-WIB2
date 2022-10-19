@@ -20,11 +20,7 @@
 
                         <div class="inputData_contact">
 
-                            <div class="inputGroup">
-                                <input class="inputboxContact" id="inputName" type="text" name="name" placeholder="Username">
-                            </div>
-                            <div class="inputGroup"><input class="inputboxContact" id="inputEmail" type="text" name="email" placeholder="Email">
-                            </div>
+                           
                             <div class="inputMessage">
                                 <label for="message"></label>
                                 <textarea class="inputContact" id="message" name="message" rows="3" cols="25" placeholder="    Your message..."></textarea>
@@ -37,6 +33,7 @@
                             <input class="btn_contact" type="submit" name="connexion" value="Envoyer">
                         </div>
                         <div class="reseau">
+                            <p>Follow us</p>
                         <img src="assets\images\illu\facebook.png" alt="">
                         <img src="assets\images\illu\twitter.png" alt="">
                         <img src="assets\images\illu\instagram.png" alt="">

@@ -4,16 +4,15 @@ include "./src/db/db.php";
 if(isset($_POST['connexion']))
 
 {
-    $nom = $_POST['name'];
-    $mail =$_POST['email'];
-	$message=$_POST['message'];
+    
+	$message =$_POST['message'];
     //Requete control de duplication dans la DB//
 
     
 
 
-    $sql = "INSERT INTO `contact` ( `name`, `email`, `message`)
-    VALUES( '$nom','$mail','$message')";
+    $sql = "INSERT INTO `contact` ( `message`)
+    VALUES( '$message')";
 
 $stmt = $mysqlClient-> prepare($sql);
 $stmt->execute();
