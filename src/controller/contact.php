@@ -1,35 +1,28 @@
 <?php 
-///<-----Put Your email address here.
-// if(empty($_POST['name'])  || 
-//    empty($_POST['email']) || 
-//    empty($_POST['message']))
-// {
-//     $errors .= "\n Error: tous les champs doivent etre completé";
-// }
+include "./src/db/db.php";
 
-// $name = $_POST['name']; 
-// $email_address = $_POST['email']; 
-// $message = $_POST['message']; 
+if(isset($_POST['connexion']))
 
-// if (!preg_match("/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i", $email_address))
-// {
-//     $errors .= "\n Error: adresse email non-valide";
-// }
+{
+    $nom = $_POST['name'];
+    $mail =$_POST['email'];
+	$message=$_POST['message'];
+    //Requete control de duplication dans la DB//
 
-// if( empty($errors))
-// {
-// 	$to = $myemail; 
-// 	$email_subject = "Contact form submission: $name";
-// 	$email_body = "You have received a new message. ".
-// 	" Here are the details:\n Name: $name \n Email: $email_address \n Message \n $message"; 
-	
-// 	$headers = "From: $myemail\n"; 
-// 	$headers .= "Reply-To: $email_address";
-	
-// 	mail($to,$email_subject,$email_body,$headers);
-	//redirect to the 'thank you' page
-// 	header('Location: ?page=carte');
-// }
+    
+
+
+    $sql = "INSERT INTO `contact` ( `name`, `email`, `message`)
+    VALUES( '$nom','$mail','$message')";
+
+$stmt = $mysqlClient-> prepare($sql);
+$stmt->execute();
+
+header('location:http://localhost/WIB2?page=contact');
+}
+
+
+
 include "./src/views/contact.php";
 
 
