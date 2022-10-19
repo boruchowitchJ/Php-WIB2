@@ -11,11 +11,14 @@ if(isset($_POST['connexion']))
     
 
 
-    $sql = "INSERT INTO `contact` ( `message`)
+    $sql = "INSERT INTO `contact` ( `id_user`,`message`)
+
     VALUES( '$message')";
+    
 
 $stmt = $mysqlClient-> prepare($sql);
 $stmt->execute();
+
 
 header('location:http://localhost/WIB2?page=contact');
 }
