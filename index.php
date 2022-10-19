@@ -35,7 +35,7 @@ include './src/db/db.php';
     <script src="./assets/scripts/allSpots.js"></script>
  <script src="./assets/scripts/carteSlide.js"></script>
 
- 
+    
 </body>
 
 </html>

@@ -2,7 +2,7 @@
     Bonjour slide
 </div>
 <img id ="img" src="base64;" alt=""> -->
-<section class="boxSlider">
+<section class="boxSlider" style="display:none;" id="boxGauche">
 <div class="HeaderBoxSlider">
             <div class="SearchSlider">
            
@@ -16,15 +16,15 @@
 </div>
 <div class="BoxContainer">
         <figure class="BoxImagePOI">
-        <img class="imagePOI" src="./assets/images/place/GrandPlace.jpg">
+        <img class="imagePOI" src="./assets/images/place/GrandPlace.jpg" id="imgPoi">
         </figure>
         <div class="container-aside">
         <!-- Infos POI  -->
-                <h2 class="titlePOI">Grand Place</h2>
+                <h2 class="titlePOI" id="titre">Grand Place</h2>
                     
-                <p class="DescPOI">La Grand-Place (Grote Markt en flamand) est non seulement le centre géographique, historique et commercial de Bruxelles, mais aussi l’une des places les plus importantes en Europe. Cette place pavée animée fait partie du plus bel ensemble architectural du XVIIe siècle de Belgique.</p>
-                <a href="https://goo.gl/maps/tQUjZMoiKTAdqzqT7" target="_blank"><div class="UrlPOI">
-                    <img class="imgURL" src="./assets/images/illu/location.png">
+                <p class="DescPOI" id="description">La Grand-Place (Grote Markt en flamand) est non seulement le centre géographique, historique et commercial de Bruxelles, mais aussi l’une des places les plus importantes en Europe. Cette place pavée animée fait partie du plus bel ensemble architectural du XVIIe siècle de Belgique.</p>
+                <a href="https://goo.gl/maps/tQUjZMoiKTAdqzqT7" target="_blank" id="urlPoi" ><div class="UrlPOI">
+                    <img class="imgURL" src="./assets/images/illu/location.png" >
                      <h3>ITINERAIRE</h3>
                 </div></a>
         <!-- The place around -->
@@ -70,7 +70,7 @@
         <h2 > Reviews</h2>
         </div> 
 <div class="ReviewsUserName">
-<h3>UserName</h3>
+<h3><?= $_SESSION['name']?></h3>
 
         </div>
     
@@ -92,48 +92,42 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- commentaire  mettre tous les $pois dans une DB -->
 <?php 
-    $pois = [
-        [ 'nom' => 'atomium', 'desc'=> 'test', 'img' => '/assets/images/place/atomium.jpg' ], 
-        [ 'nom' => 'basilique', 'desc' => 'test2','img' => '/assets/images/place/basilique.jpg' ],
+    // récupérer depuis la db
+    include("src/db/db.php");
 
-    ];
-    $json = json_encode($pois);
+    $requete ="SELECT * FROM poi";
+    $stmt = $mysqlClient->prepare($requete);
+    $stmt->execute();
+    $data = $stmt->fetchAll();
+    // var_dump($data);
+    // die;
+    $json = json_encode($data);
+    // var_dump($json);
 ?>
 
 <script>
+    let datas = <?= $json ?>;
+    console.log(datas);
+
 // permet de faire  appelle a la DB via un const qui va stocker la DB (pod)
-    const pois = JSON.parse('<?= $json ?>');
-    console.log(pois);
+    
     
     $('.lien').on('click', e => {
         e.preventDefault();
-
-        const currentEvent = pois.find(p => p.nom == e.currentTarget.getAttribute('data-place'));
-        $('#img').attr('src', currentEvent.img);
+        let id = e.currentTarget.getAttribute('data-id')
+        console.log(id);
+        // récupérer dans le tableau
+        let lieu = datas.find(p => p[0] == id);
+        console.log(lieu);
+        titre.innerText = lieu[1];
+        description.innerText = lieu[2];
+        imgPoi.src = "."+lieu[4];
+        urlPoi.href = lieu[3];
+        boxGauche.style.display = "block";
+        
+        // $('#img').attr('src', currentEvent.img);
         
         
     }); 
