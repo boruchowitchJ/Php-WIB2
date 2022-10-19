@@ -31,17 +31,17 @@ function form_verify() {
     
     // Username verify
     if (userValue === "") {
-        let message ="Username ne peut pas être vide !";
+        let message ="Username cannot be empty !";
         setError(username,message);
         invalid = true;
     }else if(!userValue.match(/^[a-zA-Z]/)){
-        let message ="Username doit commencer par une lettre !";
+        let message ="Username must start with a letter !";
         setError(username,message)
         invalid = true;
     }else{
         let letterNum = userValue.length;
         if (letterNum < 3) {
-            let message ="Username doit avoir au moins 3 caractères !";
+            let message ="Username must have at least 3 characters !";
             setError(username,message)
             invalid = true;
         } else {
@@ -51,11 +51,11 @@ function form_verify() {
     
     // email verify
     if (emailValue === "") {
-        let message = "Email ne peut pas être vide !";
+        let message = "Email cannot be empty !";
         setError(email,message);
         invalid = true;
     }else if(!email_verify(emailValue)){
-        let message = "Email non valide !";
+        let message = "Invalid Email !";
         setError(email,message);
         invalid = true;
     }else{
@@ -64,11 +64,11 @@ function form_verify() {
     
     // password verify
     if (pwdValue ==="") {
-        let message ="Le passeword ne peut pas être vide !";
+        let message ="Password cannot be empty !";
         setError(password,message)
         invalid = true;
     }else if(!password_verify(pwdValue)){
-        let message = "Le mot de passe est trop faible (8 à 12 caractères) !";
+        let message = "The password is too weak (8 to 12 characters) !";
         setError(password,message)
         invalid = true;
     }else{
@@ -76,11 +76,11 @@ function form_verify() {
     }
     // pwd confirm
     if (pwd2Value ==="") {
-        let message ="Le passeword confirm ne peut pas être vide !";
+        let message ="Password confirm cannot be empty !";
         setError(password2,message)
         invalid = true;
     }else if( pwdValue !== pwd2Value){
-        let message ="Les mot de passes ne correspondent pas !";
+        let message ="Passwords do not match!";
         setError(password2,message)
         invalid = true;
     }else{
