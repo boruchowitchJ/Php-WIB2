@@ -297,3 +297,4 @@
         </div>
     </div>
 </div>
+<script src="./assets/scripts/allSpots.js"></script>

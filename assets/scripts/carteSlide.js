@@ -10,28 +10,34 @@ const nextBtn = document.querySelector('#nextButton');
 //Counter
 
 let count = 1;// commencer par l'image n°1
-let size1 = carouselImage[0].clientWidth;
+let size1 = 470;
 carouselSlide.style.transform ='translateX(' + (-size1 * count) + 'px)';
 
 //Button Listeners
 
-nextBtn.addEventListener('click',()=>{
+nextBtn.addEventListener('click',(e)=>{
+  e.preventDefault()
+
   if(count >= carouselImage.length-1) return;
+
   carouselSlide.style.transition = "transform 0.4s ease-in-out";
   count++;
   carouselSlide.style.transform ='translateX(' + (-size1 * count) + 'px)';
 
 })
 
-prevBtn.addEventListener('click',()=>{
-  if (count <= 0)return;
-    carouselSlide.style.transition = "transform 0.4s ease-in-out";
-    count--;
-    carouselSlide.style.transform ='translateX(' + (-size1 * count) + 'px)';
+prevBtn.addEventListener('click',(e)=>{
+  e.preventDefault()
   
-  })
+  if (count <= 0)return;
 
-  carouselSlide.addEventListener('transitionend',()=>{
+  carouselSlide.style.transition = "transform 0.4s ease-in-out";
+  count--;
+  carouselSlide.style.transform ='translateX(' + (-size1 * count) + 'px)';
+  
+})
+
+carouselSlide.addEventListener('transitionend',()=>{
 
     if(carouselImage[count].class === 'lastClone'){
         carouselSlide.style.transition = "none";

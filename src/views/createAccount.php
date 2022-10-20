@@ -50,3 +50,4 @@
 </section>
 
 </section>
+<script src="./assets/scripts/create.js"></script>
