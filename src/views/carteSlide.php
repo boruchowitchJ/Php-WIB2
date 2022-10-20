@@ -126,7 +126,8 @@ $json = json_encode($data);
 
 
 // récupérer les Dev-poi depuis la db
-$requeteDiv = "SELECT * FROM poi_Div,poi where poi_Div.id_poi=poi.id";
+$requeteDiv = "SELECT * FROM poi_Div";
+
 $stmtDiv = $mysqlClient->prepare($requeteDiv);
 $stmtDiv->execute();
 $data2 = $stmtDiv->fetchAll();
@@ -138,7 +139,7 @@ $json2 = json_encode($data2);
 <script>
     let datas = <?= $json ?>;
     //console.log(datas);
-    let datasDiv = <?= $json2 ?>;
+    let datasDiv =<?= $json2 ?>;
     console.log(datasDiv);
 
     // permet de faire  appelle a la DB via un const qui va stocker la DB (pod)
@@ -147,11 +148,15 @@ $json2 = json_encode($data2);
     $('.lien').on('click', e => {
         e.preventDefault();
         let id = e.currentTarget.getAttribute('data-id')
-        
         //console.log(id);
         // récupérer dans le tableau
         let lieu = datas.find(p => p[0] == id);
-        console.log(lieu);
+
+      
+      
+        let Div= datasDiv.find(d =>d[0] == id );
+        console.log(Div);
+        //console.log(lieu);
         titre.innerText = lieu[1];
         description.innerText = lieu[2];
         imgPoi.src = "." + lieu[4];
