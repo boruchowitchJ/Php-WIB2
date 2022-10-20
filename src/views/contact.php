@@ -33,7 +33,7 @@
                             <input class="btn_contact" type="submit" name="connexion" value="Envoyer">
                         </div>
                         <div class="reseau">
-                            <p>Follow us</p>
+                        <span>Follow us</span> 
                         <img src="assets\images\illu\facebook.png" alt="">
                         <img src="assets\images\illu\twitter.png" alt="">
                         <img src="assets\images\illu\instagram.png" alt="">
