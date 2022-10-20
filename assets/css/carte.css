@@ -84,7 +84,7 @@ body{
 .picto_basilique:hover{
     width: 50px;
     height:50px;
-    border: var(--border) 1px solid;
+    border: var(--text2) 1px solid;
     border-radius: 50px;
     background-image: url(../images/place/basilique.jpg);
     background-size: cover;
@@ -107,7 +107,7 @@ body{
 .picto_palaisRoyal:hover{
     width: 50px;
     height:50px;
-    border: var(--border) 1px solid;
+    border: var(--text2) 1px solid;
     border-radius: 50px;
     background-image: url(../images/place/ChâteauRoyalLaeken.jpg);
     background-size: cover;
@@ -129,7 +129,7 @@ body{
 .picto_parcRoyal:hover{
     width: 50px;
     height:50px;
-    border:var(--border) 1px solid;
+    border:var(--text2) 1px solid;
     border-radius: 50px;
     background-image: url(../images/place/palaisRoyal.jpg);
     background-size: cover;
@@ -150,7 +150,7 @@ body{
 .picto_palaisJustice:hover{
     width: 50px;
     height:50px;
-    border:var(--border) 1px solid;
+    border:var(--text2) 1px solid;
     border-radius:50px;
     background-image: url(../images/place/palaisDeJustice.jpg);
     background-size: cover;
@@ -171,7 +171,7 @@ body{
 .picto_bourse:hover{
     width: 50px;
     height:50px;
-    border:var(--border) 1px solid;
+    border:var(--text2) 1px solid;
     border-radius: 50px;
     background-image: url(../images/place/bourse.jpg);
     background-size: cover;
@@ -193,7 +193,7 @@ body{
 .picto_grandPlace:hover{
     width: 50px;
     height:50px;
-    border: var(--border) 1px solid;
+    border: var(--text2) 1px solid;
     border-radius: 50px;
     background-image: url(../images/place/GrandPlace.jpg);
     background-size: cover;
@@ -214,7 +214,7 @@ body{
 .picto_mannequepis:hover{
     width: 50px;
     height:50px;
-    border: var(--border) 1px solid;
+    border: var(--text2) 1px solid;
     border-radius: 50px;
     background-image: url(../images/place/MannekenPis.jpg);
     background-size: cover;
@@ -236,7 +236,7 @@ body{
 .picto_cinquentenaire:hover{
     width: 50px;
     height:50px;
-    border:var(--border)1px solid;
+    border:var(--text2)1px solid;
     border-radius:50px;
     background-image: url(../images/place/parcCinquentenaire.jpg);
     background-size: cover;
@@ -257,7 +257,7 @@ body{
 .picto_tourJaponaise:hover{
     width: 50px;
     height:50px;
-    border: var(--border) 1px solid;
+    border: var(--text2) 1px solid;
     border-radius: 50px;
     background-image: url(../images/place/tourjaponaise.jpg);
     background-size: cover;
@@ -279,7 +279,7 @@ body{
 
     width: 50px;
     height:50px;
-    border:var(--border) 1px solid;
+    border:var(--text2) 1px solid;
     border-radius: 50px;
     background-image: url(../images/place/muséedAfrique.jpg);
     background-size: cover;
@@ -302,7 +302,7 @@ body{
 .picto_montDesArts:hover{
     width: 50px;
     height:50px;
-    border: var(--border) 1px solid;
+    border: var(--text2) 1px solid;
     border-radius: 50px;
     background-image: url(../images/place/montDesArts.jpg);
     background-size: cover;
