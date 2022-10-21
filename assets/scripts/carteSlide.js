@@ -11,6 +11,7 @@ const nextBtn = document.querySelector('#nextButton');
 
 let count = 1;// commencer par l'image n°1
 let size1 = 470;
+let sizeArret= -940;
 carouselSlide.style.transform ='translateX(' + (-size1 * count) + 'px)';
 
 //Button Listeners

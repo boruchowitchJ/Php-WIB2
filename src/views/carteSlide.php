@@ -43,43 +43,44 @@
             <section class="carousel-slide">
                 <!-- image3-->
 
-                <div class="carteImg">
+                <!-- <div class="carteImg">
                     <a id="URLimg3" target="_blank">
-                        <div id="Titreimg3" class="titreImg" >Hard Rock Cafe</div>
+                        <div id="Titreimg3" class="titreImg" ></div>
                     </a>
-                    <img id="img3"  class="lastClone" src="./assets/images/bar/hard Rock Cafe.jpeg">
+                    <img id="img3" >
 
+                </div> -->
+                    <!-- image2-->
+                    <div class="carteImg">
+                    <a  id="URLimg2"  target="_blank">
+                        <div id="Titreimg2" class="titreImg" ></div>
+                    </a>
+                    <img id="img2" >
                 </div>
                  <!-- image1-->
                 <div class="carteImg">
                     <a id="URLimg1" target="_blank">
                         <div  id="Titreimg1" class="titreImg" ></div>
                     </a>
-                    <img id="img1" src="./assets/images/restaurant/the sister.jpg">
+                    <img id="img1" class="lastClone" >
 
                 </div>
-                  <!-- image2-->
-                <div class="carteImg">
-                    <a  id="URLimg2" href="https://fr-fr.facebook.com/barlecercueil/" target="_blank">
-                        <div id="Titreimg2" class="titreImg" >Le Cercueil Bar</div>
-                    </a>
-                    <img id="img2" src="./assets/images/bar/Le Cercueil.png">
-                </div>
+              
                 <!-- image3-->
                 <div class="carteImg">
-                    <a id="URLimg3" href=" https://www.hardrockcafe.com/location/brussels/" target="_blank">
-                        <div  id="Titreimg3" class="titreImg">Hard Rock Cafe</div>
+                    <a id="URLimg3"  target="_blank">
+                        <div  id="Titreimg3" class="titreImg"></div>
                     </a>
-                    <img id="img3" src="./assets/images/bar/hard Rock Cafe.jpeg">
+                    <img id="img3"     class="firstClone">
                 </div>
                 <!-- image1-->
-                <div class="carteImg">
+                <!-- <div class="carteImg">
                     <a id="URLimg1" target="_blank">
-                        <div  id="Titreimg1" class="titreImg" >The Sister Restaurant</div>
+                        <div  id="Titreimg1" class="titreImg" ></div>
                     </a>
-                    <img  id="img1" class="firstClone" src="./assets/images/restaurant/the sister.jpg">
+                    <img  id="img1"  >
 
-                </div>
+                </div> -->
             </section>
 
 
@@ -170,10 +171,37 @@ $json2 = json_encode($data2);
         })
 
         
-       
-        datasDivPOI.forEach(element => {
-            console.log(element);
-        });
+       console.table(datasDivPOI);
+       for (let i = 0; i < datasDivPOI.length; i++) {
+        const element = datasDivPOI[i];
+//   const divName=datasDivPOI[2][2];
+// console.table(element)
+//    console.log(divName);
+        
+   Titreimg1.innerText = datasDivPOI[0][2];
+     img1.src =datasDivPOI[0][3];
+    URLimg1.href =datasDivPOI[0][4];
+    //im2
+    Titreimg2.innerText = datasDivPOI[1][2];
+     img2.src =datasDivPOI[1][3];
+    URLimg2.href =datasDivPOI[1][4];
+    //img3
+    Titreimg3.innerText = datasDivPOI[2][2];
+     img3.src =datasDivPOI[2][3];
+    URLimg3.href =datasDivPOI[2][4];
+
+       }
+     
+        // datasDivPOI.forEach(element => {
+        //     console.table(datasDivPOI[0].element[2]);
+            	
+           //let Div0=element[0][2];
+            //console.table(Div0);
+        //     Titreimg3.innerText = element[2];
+        // img3.src =element[3];
+        // URLimg3.href =element[4];
+
+        // });
        
 
 
@@ -195,11 +223,6 @@ $json2 = json_encode($data2);
         //console.log(id);
         // récupérer dans le tableau
         let lieu = datas.find(p => p[0] == id);
-
-
-
-        let Div = datasDiv.find(d => d[0] == id);
-        //console.log(Div);
         //console.log(lieu);
         titre.innerText = lieu[1];
         description.innerText = lieu[2];
