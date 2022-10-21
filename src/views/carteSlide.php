@@ -160,17 +160,20 @@ $json2 = json_encode($data2);
 
         let id = e.currentTarget.getAttribute('data-id')
 
-        datasDiv = datasDiv.filter((item) => { 
+
+        datasDivPOI = datasDiv.filter((item) => { 
            
             if (item.id_poi == id)
                 return item
                 
                 
         })
+
         
-      datasDiv.forEach( => {
-        
-      });
+       
+        datasDivPOI.forEach(element => {
+            console.log(element);
+        });
        
 
 
