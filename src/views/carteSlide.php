@@ -32,14 +32,12 @@
             <h2 class="AdvPOI"> The Place Around</h2>
         </div>
         <div class="carousel-container">
-            <div class="carouselNavigation">
+       
                 <div id="prevButton"></div>
                 <div id="nextButton"></div>
-            </div>
-            <!-- image3-->
-            <!-- <section class="carousel-slide" id="idImage">
-                
-            </section> -->
+            
+            
+           
             <section class="carousel-slide">
                 <!-- image3-->
 
@@ -52,6 +50,7 @@
                 </div> -->
                     <!-- image2-->
                     <div class="carteImg">
+                        <div class="boxNavigation"></div>
                     <a  id="URLimg2"  target="_blank">
                         <div id="Titreimg2" class="titreImg" ></div>
                     </a>
@@ -59,6 +58,7 @@
                 </div>
                  <!-- image1-->
                 <div class="carteImg">
+                <div class="boxNavigation"></div>
                     <a id="URLimg1" target="_blank">
                         <div  id="Titreimg1" class="titreImg" ></div>
                     </a>
@@ -68,6 +68,7 @@
               
                 <!-- image3-->
                 <div class="carteImg">
+                <div class="boxNavigation"></div>
                     <a id="URLimg3"  target="_blank">
                         <div  id="Titreimg3" class="titreImg"></div>
                     </a>
@@ -82,7 +83,7 @@
 
                 </div> -->
             </section>
-
+            
 
         </div>
 
