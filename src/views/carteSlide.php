@@ -37,9 +37,51 @@
                 <div id="nextButton"></div>
             </div>
             <!-- image3-->
-            <section class="carousel-slide" id="idImage">
+            <!-- <section class="carousel-slide" id="idImage">
                 
+            </section> -->
+            <section class="carousel-slide">
+                <!-- image3-->
+
+                <div class="carteImg">
+                    <a id="URLimg3" target="_blank">
+                        <div id="Titreimg3" class="titreImg" >Hard Rock Cafe</div>
+                    </a>
+                    <img id="img3"  class="lastClone" src="./assets/images/bar/hard Rock Cafe.jpeg">
+
+                </div>
+                 <!-- image1-->
+                <div class="carteImg">
+                    <a id="URLimg1" target="_blank">
+                        <div  id="Titreimg1" class="titreImg" ></div>
+                    </a>
+                    <img id="img1" src="./assets/images/restaurant/the sister.jpg">
+
+                </div>
+                  <!-- image2-->
+                <div class="carteImg">
+                    <a  id="URLimg2" href="https://fr-fr.facebook.com/barlecercueil/" target="_blank">
+                        <div id="Titreimg2" class="titreImg" >Le Cercueil Bar</div>
+                    </a>
+                    <img id="img2" src="./assets/images/bar/Le Cercueil.png">
+                </div>
+                <!-- image3-->
+                <div class="carteImg">
+                    <a id="URLimg3" href=" https://www.hardrockcafe.com/location/brussels/" target="_blank">
+                        <div  id="Titreimg3" class="titreImg">Hard Rock Cafe</div>
+                    </a>
+                    <img id="img3" src="./assets/images/bar/hard Rock Cafe.jpeg">
+                </div>
+                <!-- image1-->
+                <div class="carteImg">
+                    <a id="URLimg1" target="_blank">
+                        <div  id="Titreimg1" class="titreImg" >The Sister Restaurant</div>
+                    </a>
+                    <img  id="img1" class="firstClone" src="./assets/images/restaurant/the sister.jpg">
+
+                </div>
             </section>
+
 
         </div>
 
@@ -96,14 +138,14 @@ $stmtDiv = $mysqlClient->prepare($requeteDiv);
 $stmtDiv->execute();
 $data2 = $stmtDiv->fetchAll();
 $json2 = json_encode($data2);
- //var_dump($json2);
+//var_dump($json2);
 
 ?>
 
 <script>
     let datas = <?= $json ?>;
     //console.log(datas);
-    let datasDiv =<?= $json2 ?>;
+    let datasDiv = <?= $json2 ?>;
     //console.log(datasDiv);
 
     // permet de faire  appelle a la DB via un const qui va stocker la DB (pod)
@@ -113,29 +155,37 @@ $json2 = json_encode($data2);
         e.preventDefault();
 
 
-        
+
         boxGauche.style.display = "flex";
-        
+
         let id = e.currentTarget.getAttribute('data-id')
 
-        datasDiv = datasDiv.filter((item) => {
-            if(item.id_poi == id)
+        datasDiv = datasDiv.filter((item) => { 
+           
+            if (item.id_poi == id)
                 return item
+                
+                
         })
-
-
-        let slideImage = document.getElementById("idImage")
-        datasDiv.forEach((block) => {
-            slideImage.innerHTML += slideImage.innerHTML = `<div class="carteImg">
-                                                                <a id="URLimg${block.id}" href="${block.URL}" target="_blank">
-                                                                    <div  id="Titreimg${block.id}"  class="titreImg">${block.title}</div>
-                                                                </a>
-                                                                <img id="img${block.id}" class="lastClone" src="${block.images}">
-                                                            </div>`
-        })
-
-console.log(slideImage)
+        
+      datasDiv.forEach( => {
+        
+      });
        
+
+
+        // let slideImage = document.getElementById("idImage")
+        // datasDiv.forEach((block) => {
+        //     slideImage.innerHTML += slideImage.innerHTML = `<div class="carteImg">
+        //                                                         <a id="URLimg${block.id}" href="${block.URL}" target="_blank">
+        //                                                             <div  id="Titreimg${block.id}"  class="titreImg">${block.title}</div>
+        //                                                         </a>
+        //                                                         <img id="img${block.id}" class="lastClone" src="${block.images}">
+        //                                                     </div>`
+        // })
+
+        // console.log(slideImage)
+
 
 
 
@@ -143,9 +193,9 @@ console.log(slideImage)
         // récupérer dans le tableau
         let lieu = datas.find(p => p[0] == id);
 
-      
-      
-        let Div= datasDiv.find(d =>d[0] == id );
+
+
+        let Div = datasDiv.find(d => d[0] == id);
         //console.log(Div);
         //console.log(lieu);
         titre.innerText = lieu[1];
@@ -154,7 +204,7 @@ console.log(slideImage)
         urlPoi.href = lieu[3];
 
 
-      // récupérer les DevPOI dans le tableau 
+        // récupérer les DevPOI dans le tableau 
 
 
     });
@@ -163,5 +213,3 @@ console.log(slideImage)
         boxGauche.style.display = "none";
     });
 </script>
-
-
