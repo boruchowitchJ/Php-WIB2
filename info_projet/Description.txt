@@ -1,4 +1,4 @@
-- Parc cinquantenaire -
+1 Parc cinquantenaire -
 description:
 
 Construit en 1880 pour le 50e anniversaire de l’indépendance de la Belgique, le parc du Cinquantenaire est à la fois un ensemble de jardins « à la française » et un site historique où découvrir monuments, sculptures et musées.
@@ -18,7 +18,7 @@ https://www.artandhistory.museum/fr
 Africa museum:
 https://www.africamuseum.be/fr
 
-- Monts des Arts -
+2 Monts des Arts -
 Le jardin du Mont des Arts est situé en contrebas de la place Royale, il assure une transition verte entre le haut et le bas de la ville, entre la place Royale et la Grand-Place qu’on retrouve dans le centre historique de Bruxelles.
 Historiquement aménagé en vue de la tenue de l’Exposition Universelle de 1910, il a pris place, dans les années 50, après adaptations, au sein du vaste complexe urbanistique du Mont des Arts.
 Concrètement, ce « Mont des Arts » intègre KBR (ex-Bibliothèque royale), une galerie commerciale et de bureaux sise de l’autre côté de la rue justement appelée « Mont des Arts », le Palais des Congrès — ou « Square » — cube de verre en haut, la statue d’Albert Ier en contrebas, des jardins et esplanades, et enfin un parking en sous-sol...
@@ -38,7 +38,7 @@ Chemistry and botanic's:
 https://www.instagram.com/chemistrybotanics/
 
 
-- Château Royal Laeken -
+3 Château Royal Laeken -
 Résidence du roi des Belges, le château intègre le vaste domaine royal de Laeken, qui atteindra 186 hectares à son apogée !
 À la fin du 18e siècle, quelques années avant la Révolution française, le couple autrichien qui est nommé gouverneur général des Pays-Bas décide de se construire une nouvelle résidence d’été : le château de Schoonenberg (littéralement, « Beau Mont »), ancêtre du château de Laeken.
 L’énorme parc qui entoure le château résulte de la réunion de différentes propriétés et acquisitions au fil du temps.
@@ -58,7 +58,7 @@ Design museum brussels:
 https://designmuseum.brussels/
 
 
-- Palais de Justice -
+4 Palais de Justice -
 Le Palais de justice de Bruxelles est un imposant bâtiment de style éclectique d'inspiration gréco-romaine situé sur la plus grande place de Bruxelles, la place Poelaert. D'une surface au sol de 26 000 m2, il est plus vaste que la Basilique Saint-Pierre de Rome1. Il est l'œuvre de l'architecte Joseph Poelaert.
 
 La Grande Roue (place Poelaert)
@@ -74,7 +74,7 @@ Impérial Premium bar
 https://www.instagram.com/limperialpremiumbar/?hl=fr
 
 
-- ATOMIUM -
+5 ATOMIUM -
 L’Atomium est un monument de Bruxelles, en Belgique, construit à l'occasion de l'Exposition universelle de 1958 et représentant la maille conventionnelle du cristal de fer (structure cubique centrée) agrandie 165 milliards de fois.
 Il est situé à Laeken sur le plateau du Heysel où eut lieu cette exposition.
 L’Atomium a été cree par l’ingénieur André Waterkeyn et érigé par les architectes André et Jean Polak pour l’Exposition universelle de 1958 à Bruxelles en Belgique. Il est devenu, au même titre que le Manneken-Pis et la Grand-Place, un symbole de la capitale de la Belgique.
@@ -97,7 +97,7 @@ https://atomium.be/home/Index?lang=fr&gclid=EAIaIQobChMI8oaPx7vs-gIV25BoCR3Z9gFB
 
 
 
-- BASILIQUE -
+6 BASILIQUE -
 
 La basilique du Sacré-Cœur (familièrement appelée basilique de Koekelberg, car sise sur le plateau de Koekelberg), est un édifice religieux catholique situé à cheval sur les communes de Koekelberg et de Ganshoren,
 dans la Région bruxelloise en Belgique. Conçue au début du xxe siècle comme monument national et, après la Première Guerre mondiale,
@@ -119,7 +119,7 @@ Bruneau:
 https://maximemaziers.be/
 
 
-- BOURSE -
+7 BOURSE -
 
 Érigé à Bruxelles sur le boulevard Anspach entre 1868 et 1873 d’après les plans de l'architecte Léon-Pierre Suys, le bâtiment de la Bourse de Bruxelles ou la Bourse (en néerlandais : Beurs van Brussel ou de Beurs) s’inscrit dans le programme d’assainissement et d’embellissement de la ville,
 du voûtement de la Senne et de la création des boulevards du centre. Cet édifice imposant répond au besoin essentiel à l’époque de créer un centre où traiter les affaires commerciales alors en pleine expansion. Ce monument qui allie grandeur et fantaisie occupe l’emplacement de l’ancien marché au beurre,
@@ -140,7 +140,7 @@ Life is beautiful:
 https://www.instagram.com/libcocktailbar/?igshid=YmMyMTA2M2Y%3D
 
 
-- TOUR JAPONNAISE -
+8 TOUR JAPONNAISE -
 Selon une légende tenace, la tour japonaise serait une authentique pagode japonaise provenant de la représentation japonaise à l'Exposition universelle de 1900 à Paris et seul le guichet aurait été rachetée par le roi Léopold II. L'édifice n'est en fait pas conforme à l'architecture bouddhique japonaise: sous ses cinq toits, il compte six niveaux, contrairement aux cinq que l'on attendrait normalement.
 
 itineraire:
