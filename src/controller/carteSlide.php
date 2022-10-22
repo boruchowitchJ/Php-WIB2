@@ -2,27 +2,36 @@
 
 
 // connexion db
-include "./src/db/db.php";
+include("src/db/db.php");
 
-$isFound = false;
+///insérer un commentaire dans la DB
 
-
-
-$query= "
-SELECT  * FROM poi;
-";
-$lecturePoi= $mysqlClient->prepare($query);
-
-$lecturePoi->execute();
-
-$listePoi = $lecturePoi->fetchAll();
-
-// foreach ($listePoi as $Poi) {
-// // echo  $Poi['id']. $Poi['title'].$Poi['description'].$Poi['URL_maps'].$Poi['Images_URL'];
-// // $Poi['id']. $Poi['title'].$Poi['description'].$Poi['URL_maps'].$Poi['Images_URL'];
+if(isset($_POST['comment']))
+{
 
 
-// }
+    	$comment =$_POST['ReviewsPoi'];
+         $name= $_SESSION['name'];
+         $IdPoi =$_POST['idPoi'];
+
+    
+        
+
+         $Cmt= "INSERT INTO poi_Avis ( id_user, message, date, id_poi) VALUES ((SELECT id FROM user WHERE user.name = '$name'),'$comment',(SELECT DATE_FORMAT(SYSDATE(), '%d %b %H:%i' )), $IdPoi)";
+
+         $stmt1 = $mysqlClient-> prepare($Cmt);
+         $stmt1->execute();
+        
+         header('location:http://localhost/WIB2?page=carte');
+
+        
+
+}
+
+
+
+
+
 
 // if($get["poi"] == "atomium"){
 //     //je prépare ma requete sql pour aller chercher les ifnso de ce poi
