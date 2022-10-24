@@ -189,7 +189,7 @@ $json4 = json_encode($dataName);
 
 
         boxGauche.style.display = "flex";
-
+        
         let id = e.currentTarget.getAttribute('data-id')
 
 
