@@ -192,7 +192,7 @@ $json4 = json_encode($dataName);
         
         let id = e.currentTarget.getAttribute('data-id')
 
-
+// comparer l'id de poi avec l'id de PLACE AROUND
 
         datasDivPOI = datasDiv.filter((item) => {
 
@@ -294,29 +294,7 @@ $json4 = json_encode($dataName);
         }
 
 
-
-
-
-
-
-
-
-        // RevPOI.innerHTML += RevPOI.innerHTML = `<div class="carteImg">
-        //                                                     <a id="URLimg${block.id}" href="${block.URL}" target="_blank">
-        //                                                         <div  id="Titreimg${block.id}"  class="titreImg">${block.title}</div>
-        //                                                     </a>
-        //                                                     <img id="img${block.id}" class="lastClone" src="${block.images}">
-        //                                                 </div>`
-
-
-        // console.log(slideImage)
-
-
-
-
-        //console.log(id);
-
-        // récupérer dans le tableau
+        // récupérer les datas Poi dans le tableau
         let lieu = datas.find(p => p[0] == id);
         titre.innerText = lieu[1];
         description.innerText = lieu[2];
@@ -340,4 +318,22 @@ $json4 = json_encode($dataName);
     $('.CloseBox').on('click', e => {
         boxGauche.style.display = "none";
     });
+
+
+
+
+    // RevPOI.innerHTML += RevPOI.innerHTML = `<div class="carteImg">
+        //                                                     <a id="URLimg${block.id}" href="${block.URL}" target="_blank">
+        //                                                         <div  id="Titreimg${block.id}"  class="titreImg">${block.title}</div>
+        //                                                     </a>
+        //                                                     <img id="img${block.id}" class="lastClone" src="${block.images}">
+        //                                                 </div>`
+
+
+        // console.log(slideImage)
+
+
+
+
+        //console.log(id);
 </script>
