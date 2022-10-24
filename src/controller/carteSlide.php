@@ -17,7 +17,7 @@ if(isset($_POST['comment']))
     
         
 
-         $Cmt= "INSERT INTO poi_Avis ( id_user, message, date, id_poi) VALUES ((SELECT id FROM user WHERE user.name = '$name'),'$comment',(SELECT DATE_FORMAT(SYSDATE(), '%d %b %H:%i' )), $IdPoi)";
+         $Cmt= "INSERT INTO poi_avis ( id_user, message, date, id_poi) VALUES ((SELECT id FROM user WHERE user.name = '$name'),'$comment',(SELECT DATE_FORMAT(SYSDATE(), '%d %b %H:%i' )), $IdPoi)";
 
          $stmt1 = $mysqlClient-> prepare($Cmt);
          $stmt1->execute();

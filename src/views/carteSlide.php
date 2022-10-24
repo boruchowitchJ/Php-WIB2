@@ -145,7 +145,7 @@ $json = json_encode($data);
 
 
 // récupérer les Dev-poi depuis la db
-$requeteDiv = "SELECT * FROM poi_Div";
+$requeteDiv = "SELECT * FROM poi_div";
 
 $stmtDiv = $mysqlClient->prepare($requeteDiv);
 $stmtDiv->execute();
@@ -155,7 +155,7 @@ $json2 = json_encode($data2);
 
 
 // récupérer les Review-poi depuis la db
-$requeteReview = "SELECT * FROM  poi_Avis";
+$requeteReview = "SELECT * FROM  poi_avis";
 
 $stmtReview = $mysqlClient->prepare($requeteReview);
 $stmtReview->execute();
@@ -320,7 +320,7 @@ $json4 = json_encode($dataName);
         let lieu = datas.find(p => p[0] == id);
         titre.innerText = lieu[1];
         description.innerText = lieu[2];
-        imgPoi.src = "." + lieu[4];
+        imgPoi.src = "./" + lieu[4];
         urlPoi.href = lieu[3];
 
         ///recupérer l'id de POI dans le comment

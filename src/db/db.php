@@ -1,14 +1,15 @@
 <?php
 
 // connexion à la base de données
-$host = "remotemysql.com";
-$user = "qypIEJ70Uk";
-$db = "qypIEJ70Uk";
-$pwd = "LTkbwXTH1g";
-$port = 3306;
-
 try {
-    $mysqlClient = new PDO("mysql:dbname=$db;port=$port;host=$host", $user, $pwd);
+    $mysqlClient = new PDO(
+        sprintf('mysql:host=%s;dbname=%s;port=%s', 
+        "localhost",
+        "walk_in_brussels",
+        3306),
+        "root",
+        "root"
+    );
     $mysqlClient->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 }
 catch(Exception $exception) {
